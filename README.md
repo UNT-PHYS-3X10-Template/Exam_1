@@ -15,6 +15,5 @@ TASKS:
 4. Starting from the task4.py program, and the developments in the previous three tasks, modify the program to implement a random-walk motion for the particles: at each timestep the particle moves according to a uniform velocity motion, but after the move the velocity is changed randomly. 
 
 OPTIONAL TASKS:
-1. For tasks 1-4, modify the program to count the number of collisions with the box walls per particle. How is this number related to the speed of the particle? 
-2. For tasks 2-4, modify the program to count the number of encounters between particles. Since the particles do not really interact with each other, two particles can be considered to encounter when their distance is within a certain small threshold. 
+1. Modify the boundary conditions from hard reflective walls to periodic boundary conditions.
 
