@@ -72,8 +72,6 @@ a,=axes.plot(xpos,[0.]*nparticles,'go') # We generate a plot with the starting c
 # Define the function that performs a single step of the animation
 #
 def animate(i):
-    global xpos
-    global xvel
     # Move each particle, one at a time
     for i in range(nparticles):
       xpos[i], xvel[i] = move(dt,xpos[i],xvel[i],xbox) # move particle i
