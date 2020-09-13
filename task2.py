@@ -8,6 +8,7 @@ Authors: O. Andreussi and STUDENT
 """
 # TASK 2: This program should perform a simulation of a variable number of particle moving in one-dimension inside a box with hard reflecting walls.
 #         This task requires you to complete the setup of the starting configuration and to complete the move() function.
+#         (NOTE: the function from TASK1 should probably work fine)
 # 
 # EXPECTED OUTCOME: An animation of a dot moving along the real axis and bounching back and forth inside the [0,1] interval.
 #
@@ -41,11 +42,11 @@ xpos=[] # TASK2: this should be a list (or a numpy array) with nparticles elemen
 xvel=[] # TASK2: this should be a list (or a numpy array) with nparticles elements, corresponding to the x-component of the particles's velocities. 
 # NOTE: initial velocities can be considered to be inside the [-1.,1.] interval
 #
-# The following is the function responsible to describe the motion of a particle during a short timestep
+# The following is the function responsible to describe the motion of a single particle during a short timestep
 #
 def move(dt,xpos,xvel,xbox):
     """
-    This function describes the motion of a particle subject to no interactions apart from elastic reflections from the box walls.
+    This function describes the motion of a single particle subject to no interactions but elastic reflections from the box walls.
     The particle's coordinates will change according to a constant velocity motion. 
     If the position of the particle falls outside of the box walls, the particle's velocity changes sign (reflection).
     Input arguments:
@@ -53,7 +54,7 @@ def move(dt,xpos,xvel,xbox):
     Output results:
         updated x-components of particle's position and velocity
     """
-    # TAKS1: 
+    # TAKS2: 
     #       1. write a statement to update the particle's position (xpos) according to a 1D constant velocity motion
     #
     #       2. write a conditional block to check if the new position falls within the interval [0,xbox]. 
