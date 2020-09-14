@@ -61,7 +61,7 @@ def move(dt,xpos,ypos,xvel,yvel,xbox,ybox):
     Output results:
         updated x and y components of particle's position and velocity
     """
-    # TAKS2: 
+    # TAKS3: 
     #       1. write a statement to update the particle's position (xpos and ypos) according to a 2D constant velocity motion
     #
     #       2. write a conditional block to check if the new position falls within the intervals [0,xbox] and [0,ybox]. 
