@@ -71,6 +71,8 @@ a,=axes.plot(xpos,0.,'go') # We generate a plot with the starting configuration
 # Define the function that performs a single step of the animation
 #
 def animate(i):
+    global xpos
+    global xvel
     xpos, xvel = move(dt,xpos,xvel,xbox) # we move the particle
     a.set_data(xpos,0.) # we update the plot
     return a,
